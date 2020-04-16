@@ -17,17 +17,17 @@ services:
       - '--storage.tsdb.retention.time=365d'
     network_mode: "host"
 
-  alertmanager:
-    image: prom/alertmanager:v0.18.0
-    container_name: alertmanager
-    deploy:
-      replicas: 1
-    volumes:
-      - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
-      - ./alertmanager/templates/default.tmpl:/etc/alertmanager/templates/default.tmpl
-    command:
-      - '--config.file=/etc/alertmanager/alertmanager.yml'
-    network_mode: "host"
+  # alertmanager:
+  #   image: prom/alertmanager:v0.18.0
+  #   container_name: alertmanager
+  #   deploy:
+  #     replicas: 1
+  #   volumes:
+  #     - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+  #     - ./alertmanager/templates/default.tmpl:/etc/alertmanager/templates/default.tmpl
+  #   command:
+  #     - '--config.file=/etc/alertmanager/alertmanager.yml'
+  #   network_mode: "host"
 
   grafana:
     image: grafana/grafana:6.2.5
@@ -46,14 +46,14 @@ services:
       - ./grafana/dashboards:/var/lib/grafana/dashboards
     network_mode: "host"
 
-  blackbox:
-    image: prom/blackbox-exporter:v0.14.0
-    container_name: blackbox_exporter
-    deploy:
-      replicas: 1
-    volumes:
-    - ./blackbox:/config
-    network_mode: "host"
+  # blackbox:
+  #   image: prom/blackbox-exporter:v0.14.0
+  #   container_name: blackbox_exporter
+  #   deploy:
+  #     replicas: 1
+  #   volumes:
+  #   - ./blackbox:/config
+  #   network_mode: "host"
 
   node_exporter:
     image: prom/node-exporter:v0.18.1
