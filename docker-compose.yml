@@ -62,6 +62,11 @@ services:
       replicas: 1
     network_mode: "host"
 
+  pushprox:
+    image: camptocamp/pushprox:20191002-1
+    container_name: pushprox
+    network_mode: : "host"
+
 volumes:
   prometheus-data:
   grafana-data:
