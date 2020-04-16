@@ -7,7 +7,7 @@ services:
     container_name: prometheus
     deploy:
       replicas: 1
-    port:
+    ports:
       - 9090:9090
     volumes:
       - prometheus-data:/prometheus
@@ -40,7 +40,7 @@ services:
       replicas: 1
     depends_on:
       - prometheus
-    port:
+    ports:
       - 3000:3000
     volumes:
       - grafana-data:/var/lib/grafana
