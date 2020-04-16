@@ -50,7 +50,7 @@
             "idle": "#0A50A1"
           },
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 10,
           "hideTimeOverride": false,
           "id": 4,
@@ -143,7 +143,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "hideTimeOverride": false,
           "id": 12,
@@ -236,7 +236,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "hideTimeOverride": false,
           "id": 13,
@@ -341,7 +341,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "hideTimeOverride": false,
           "id": 10,
@@ -460,7 +460,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "hideTimeOverride": false,
           "id": 11,
@@ -591,7 +591,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 2,
           "hideTimeOverride": false,
           "id": 8,
@@ -710,7 +710,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "hideTimeOverride": false,
           "id": 9,
@@ -803,7 +803,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "hideTimeOverride": false,
           "id": 15,
@@ -908,7 +908,7 @@
         {
           "aliasColors": {},
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 1,
           "hideTimeOverride": false,
           "id": 14,
@@ -1068,7 +1068,7 @@
             "stopped": "#2F575E"
           },
           "bars": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "Prometheus",
           "fill": 10,
           "id": 7,
           "legend": {
@@ -1198,7 +1198,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "${DS_PROMETHEUS}",
+        "datasource": "Prometheus",
         "hide": 0,
         "includeAll": false,
         "label": "Server",
