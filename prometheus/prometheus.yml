@@ -53,5 +53,5 @@ scrape_configs:
     scrape_interval: 1m
     proxy_url: http://127.0.0.1:8080/
     static_configs:
-      - targets: ['joffrey3800:9182']
+      - targets: ['joffrey3800:9182', 'LAPTOP-GF4TEQOR.bethel.jw.org:9182']
             
