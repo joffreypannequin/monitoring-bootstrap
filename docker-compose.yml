@@ -65,7 +65,7 @@ services:
   pushprox:
     image: camptocamp/pushprox:20191002-1
     container_name: pushprox
-    network_mode: : "host"
+    network_mode: "host"
 
 volumes:
   prometheus-data:
